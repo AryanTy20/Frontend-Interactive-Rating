@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+$card: #202731;
+$or: #fc7613;
+$p: #7b818d;
+$numbehind: #262f38;
+
+body {
+  color: white;
+  font-size: 1.6rem;
+  background-color: #141519;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+
+  .attribution {
+    position: fixed;
+    bottom: 10%;
+    font-size: 1.4rem;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+
+  .card {
+    height: 25em;
+    width: 25em;
+    border-radius: 1.5em;
+    padding: 2em;
+    background-color: $card;
+
+    .star {
+      background-color: $numbehind;
+      height: 3em;
+      width: 3em;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+
+    .meta {
+      margin: 1.5em 0;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        margin: 1em 0;
+        color: $p;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+
+    .rating-box {
+      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        display: grid;
+        place-items: center;
+        height: 3em;
+        width: 3em;
+        background-color: $numbehind;
+        border-radius: 50%;
+        color: #868f9e;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          background-color: #fc7613;
+          color: #fcf8ed;
+        }
+      }
+
+      .active {
+        background-color: #7c8898;
+        color: white;
+      }
+    }
+
+    button {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      width: 100%;
+      padding: 1em;
+      border: 0;
+      outline: 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-radius: 50px;
+      background-color: #fc7613;
+      color: #fcf8ed;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: white;
+        color: #fc7613;
+      }
+    }
+  }
+
+  .card2 {
+    height: 25em;
+    width: 25em;
+    border-radius: 1.5em;
+    padding: 2em;
+    background-color: $card;
+    text-align: center;
+
+    .rating-output {
+      background-color: $numbehind;
+      margin: 1.5em auto;
+      padding: 0.5em 1.5em;
+      width: fit-content;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      color: #fc7613;
+    }
+
+    h2 {
+      margin: 1.5em 0 0.5em 0;
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin: 1em 0;
+      color: $p;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+}
