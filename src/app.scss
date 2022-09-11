@@ -161,3 +161,22 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .main {
+    .card,
+    .card2 {
+      width: 90vw;
+      padding: 1em;
+    }
+
+    .card2 {
+      padding: 2em 1em 1em 1em;
+    }
+
+    .attribution {
+      font-size: 1.2rem;
+    }
+  }
+}
+
