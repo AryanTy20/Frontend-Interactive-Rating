@@ -33,8 +33,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://frontend-interactive-rating.vercel.app/
-- Live Site URL: https://github.com/AryanTy20/Frontend-Interactive-Rating
+- Solution URL: https://github.com/AryanTy20/Frontend-Interactive-Rating
+- Live Site URL:  https://frontend-interactive-rating.vercel.app/
+
 
 ## My process
 
